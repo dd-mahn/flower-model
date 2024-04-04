@@ -13,7 +13,7 @@ def preprocessing(data_path):
     y = data['species'].values
 
     # Splitting the dataset into the Training set and Test set
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.20, random_state = 82)
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.20, random_state = None)
     
     # Feature Scaling to bring the variable in a single scale
     sc = StandardScaler()
